@@ -1,0 +1,12 @@
+# Merge these entries into the existing Traefik static configuration.
+# Keep the existing entryPoints/provider settings. Do not replace that file.
+providers:
+  http:
+    endpoint: http://192.168.1.10:8080/v1/traefik
+    pollInterval: 5s
+    pollTimeout: 5s
+    headers:
+      Authorization: Bearer CHANGE_ME_WITH_THE_SAME_LAN_TOKEN
+entryPoints:
+  postgres:
+    address: :15432

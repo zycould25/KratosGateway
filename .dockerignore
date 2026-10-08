@@ -1,0 +1,7 @@
+.git
+.env
+.env.*
+deploy/gateway.remote.env
+.idea
+data
+bin
